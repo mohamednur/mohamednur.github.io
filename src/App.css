@@ -3,8 +3,10 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 20vmin;
   pointer-events: none;
+  border: 2px solid red;
+  border-radius: 10px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -12,9 +14,21 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.welcome{
+  position: absolute;
+  bottom: 10%;
+  color: yellow;
+  gap: 10px;
+  display: flex;
+  font-size: small;
+  font-family: 'Times New Roman', Times, serif;
+  flex-wrap: wrap;
 
+}
 .App-header {
-  background-color: #282c34;
+  position: relative;
+  background: #333;
+  /* background-color: #282c34; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,6 +36,10 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+.header-text {
+  position: absolute;
+  top: 80vh;
 }
 
 .App-link {
